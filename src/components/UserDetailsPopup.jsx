@@ -17,7 +17,7 @@ function UserDetailsPopup() {
         return;
       }
 
-      const response = await axios.get("https://medicalbackenddeploy-2.onrender.com/details", {
+      const response = await axios.get("http://localhost:5000/details", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
