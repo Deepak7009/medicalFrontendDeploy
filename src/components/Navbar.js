@@ -28,7 +28,7 @@ function Navbar({ handleLogout }) {
         return;
       }
 
-      const response = await axios.get("https://medicalbackenddeploy-2.onrender.com/details", {
+      const response = await axios.get("http://localhost:5000/details", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -136,6 +136,12 @@ function Navbar({ handleLogout }) {
                </span>
             </Link>
             <div className="flex items-center">
+            <Link
+                  to="/Setting"
+                  className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-full shadow-md transition duration-300 ease-in-out mr-4"
+               >
+                  Setting
+               </Link>
                <Link
                   to="/dbData"
                   className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-full shadow-md transition duration-300 ease-in-out mr-4"
