@@ -28,7 +28,7 @@ function Navbar({ handleLogout }) {
         return;
       }
 
-      const response = await axios.get("http://localhost:5000/details", {
+      const response = await axios.get("https://medicalbackenddeploy-2.onrender.com/details", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -78,7 +78,7 @@ function Navbar({ handleLogout }) {
             }
    
             const response = await axios.put(
-               "http://localhost:5000/update",
+               "https://medicalbackenddeploy-2.onrender.com/update",
                { username: newUsername },
    
                {

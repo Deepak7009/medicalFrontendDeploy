@@ -68,7 +68,7 @@ const Test = ({handleTabClick}) => {
     setinfo(patientData);
   }, [patientData]);
 
-  const baseUrl = "http://localhost:5000/user";
+  const baseUrl = "https://medicalbackenddeploy-2.onrender.com/user";
 
   const handleSaveResult = async () => {
     const combinedData = { info, testResults };
